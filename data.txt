@@ -1,0 +1,5 @@
+name,age,subject
+kishore,20,science
+rahul,19,physics
+ajay,20,science
+vineeta sharma,18,science
