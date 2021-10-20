@@ -1,0 +1,45 @@
+# SUPERVISED MACHINE LEARNING STEPS
+#---------------------------------------
+
+!pip install scikit-learn
+############################
+
+# Data Acquire
+# read_csv()
+
+# Data Analysis
+# Visualizations/Stastical
+
+# Data Cleaning
+# lot of operations
+
+# Prepare Training & Testing Data
+#======
+# Attributes/Features ---> X
+# Labels/Outcomes ---> Y
+
+from sklearn.model_selection import train_test_split
+xtrain,xtest, ytrain,ytest = train_test_split(x,y, test_size=0.3, random_state=100)
+
+
+# Model Create & Training
+#---------------------------
+from sklearn.linear_model import LinearRegression
+model_lr = LinearRegression().fit(xtrain,ytrain)
+
+#.....
+
+
+# Model Evaluation
+# ---------------------
+ypred = model_lr(xtest)
+# compare ypred with ytest
+
+model_lr.score(xtest,ytest)
+
+# Model Deployment
+#-----------------------------
+#
+#
+#
+#
